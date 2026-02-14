@@ -151,17 +151,17 @@ we know that, a^a = 0 and a^0 = a , following the inverse property of XOR. using
 
 (a^b)^c^c = d^c
 
-(a^b)^0 = d^c
+(a^b)^0 = d^c      (c^c = 0 : Inverse law)
 
-a^b = d^c
+a^b = d^c          (a^b^0 = a^b)
 
 applying XOR with b on both the sides,
 
-a^b^b = d^c^b
+a^b^b = d^c^b    
 
-a^0 = d^c^b
+a^0 = d^c^b        (b^b = 0  : Inverse law)
 
-a = d^c^b
+a = d^c^b          (a^0 = a)
 
 since XOR is commutative and associative, we can rearrange the expression as a = b^c^d. lets use a python code to calculate the value of the user input.
 
